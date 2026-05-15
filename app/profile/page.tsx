@@ -1,5 +1,5 @@
 "use client";
-import { Grid, Bookmark, MapPin, Link as LinkIcon, Calendar, Flame as Fire, ShieldCheck, Trophy, Settings, PlayCircle, Image as ImageIcon } from "lucide-react";
+import { Grid, Bookmark, MapPin, Link as LinkIcon, Calendar, Flame, ShieldCheck, Trophy, Settings, PlayCircle, Image as ImageIcon } from "lucide-react";
 
 export default function ProfilePage() {
   const posts = Array(9).fill(0);
@@ -32,7 +32,7 @@ export default function ProfilePage() {
           </div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-          {[{ label: "منشور", value: "128", icon: <Grid size={16}/> }, { label: "متابع", value: "12.5k", icon: <Trophy size={16}/> }, { label: "نقطة XP", value: "1,850", icon: <Fire size={16} className="text-orange-500"/> }, { label: "ترتيب", value: "#12", icon: <ShieldCheck size={16} className="text-[#22D3EE]"/> }].map((stat, i) => (
+          {[{ label: "منشور", value: "128", icon: <Grid size={16}/> }, { label: "متابع", value: "12.5k", icon: <Trophy size={16}/> }, { label: "نقطة XP", value: "1,850", icon: <Flame size={16} className="text-orange-500"/> }, { label: "ترتيب", value: "#12", icon: <ShieldCheck size={16} className="text-[#22D3EE]"/> }].map((stat, i) => (
             <div key={i} className="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 p-4 rounded-3xl text-center shadow-sm">
               <div className="flex justify-center mb-1 text-slate-400">{stat.icon}</div>
               <div className="text-xl font-black dark:text-white">{stat.value}</div>

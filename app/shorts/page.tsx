@@ -1,5 +1,5 @@
 "use client";
-import { Heart, MessageCircle, Share2, Music, Plus, Bookmark, Play, Flame as Fire } from "lucide-react";
+import { Heart, MessageCircle, Share2, Music, Plus, Bookmark, Play, Flame } from "lucide-react";
 
 export default function ShortsPage() {
   return (
@@ -27,7 +27,7 @@ export default function ShortsPage() {
         </aside>
         <footer className="absolute bottom-0 left-0 right-0 p-6 pt-20 bg-gradient-to-t from-black/80 to-transparent text-right z-10">
           <div className="flex flex-col gap-2">
-            <h3 className="text-white font-black text-lg flex items-center justify-end gap-2">@ali_aljabarti <Fire size={18} className="text-orange-500" /></h3>
+            <h3 className="text-white font-black text-lg flex items-center justify-end gap-2">@ali_aljabarti <Flame size={18} className="text-orange-500" /></h3>
             <p className="text-white/90 text-sm font-bold leading-relaxed">كيف تبني نظام الـ Feed في ٦٠ ثانية؟ #برمجة #Orbital #NextJS 💻🚀</p>
             <div className="flex items-center justify-end gap-2 text-white/70 text-xs font-bold"><span>Original Sound - Ali Aljabarti</span><Music size={14} /></div>
           </div>
